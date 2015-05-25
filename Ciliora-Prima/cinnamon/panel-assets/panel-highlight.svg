@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r"
-   sodipodi:docname="DND-panel-bottom-right.svg"
+   sodipodi:docname="panel-highlight.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -136,13 +136,5 @@
        height="24"
        x="8.8817842e-16"
        y="276" />
-    <rect
-       style="opacity:0.25;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;enable-background:new"
-       id="rect3230"
-       width="24"
-       height="1"
-       x="-300"
-       y="8.8817842e-16"
-       transform="matrix(0,-1,1,0,0,0)" />
   </g>
 </svg>

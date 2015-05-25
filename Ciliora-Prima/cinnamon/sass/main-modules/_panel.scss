@@ -14,9 +14,18 @@
     &.panel-bottom {
         box-shadow: 0 -1px rgba(255, 255, 255, .15);
     }
+
+    &:highlight {
+        border-image: url("panel-assets/panel-highlight.svg") 4;
+    }
 }
 
-/* panel edit mode */
+.panel-dummy {
+    background-color: alpha($accent, .8);
+
+    &:entered { background-color: $accent; }
+}
+
 /* Top & bottom panels use different images */
 @each $v in panel-top, panel-bottom {
     .#{$v} {
