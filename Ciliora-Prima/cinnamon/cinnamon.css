@@ -11,6 +11,7 @@ stage {
   font-weight: normal;
   text-decoration: underline;
 }
+
 .cinnamon-link:hover {
   color: #ef8112;
 }
@@ -42,6 +43,7 @@ stage {
 StScrollView.vfade {
   -st-vfade-offset: 0;
 }
+
 StScrollView.hfade {
   -st-hfade-offset: 0;
 }
@@ -52,13 +54,16 @@ StScrollBar {
   min-width: 8px;
   min-height: 16px;
 }
+
 StScrollBar StBin#trough {
   background-color: transparent;
 }
+
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle {
   border-image: url("widget-assets/scroll-handle.svg") 3;
 }
+
 StScrollBar StButton#vhandle:hover,
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:active,
@@ -88,11 +93,13 @@ StScrollBar StButton#hhandle:focus {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .popup-menu StEntry StIcon,
 .modal-dialog StEntry StIcon,
 #notification StEntry StIcon {
   color: #999;
 }
+
 .popup-menu StEntry:focus,
 .modal-dialog StEntry:focus,
 #notification StEntry:focus {
@@ -105,6 +112,7 @@ StScrollBar StButton#hhandle:focus {
   selected-color: white;
   selection-background-color: #8198af;
 }
+
 .popup-menu StEntry:focus StIcon,
 .modal-dialog StEntry:focus StIcon,
 #notification StEntry:focus StIcon {
@@ -119,9 +127,11 @@ StScrollBar StButton#hhandle:focus {
   height: 20px;
   background-size: contain;
 }
+
 .toggle-switch-us, .toggle-switch-intl {
   background-image: url("widget-assets/off.svg");
 }
+
 .toggle-switch-us:checked, .toggle-switch-intl:checked {
   background-image: url("widget-assets/on.svg");
 }
@@ -129,46 +139,56 @@ StScrollBar StButton#hhandle:focus {
 /* ===================================================================
    ! Checkboxes + Radio buttons
    ===================================================================*/
-.check-box CinnamonGenericContainer {
+.checkbox CinnamonGenericContainer {
   spacing: .2em;
   min-height: 16px;
 }
-.check-box StLabel {
+
+.checkbox StLabel {
   padding-top: 1px;
 }
-.check-box StBin {
+
+.checkbox StBin {
   width: 16px;
   height: 16px;
-  background-image: url("widget-assets/check-box.svg");
+  background-image: url("widget-assets/checkbox.svg");
 }
-.check-box:focus StBin {
-  background-image: url("widget-assets/check-box-focused.svg");
+
+.checkbox:focus StBin {
+  background-image: url("widget-assets/checkbox-focused.svg");
 }
-.check-box:checked StBin {
-  background-image: url("widget-assets/check-box-checked.svg");
+
+.checkbox:checked StBin {
+  background-image: url("widget-assets/checkbox-checked.svg");
 }
-.check-box:focus:checked {
-  background-image: url("widget-assets/check-box-focused-checked.svg");
+
+.checkbox:focus:checked {
+  background-image: url("widget-assets/checkbox-focused-checked.svg");
 }
 
 .radiobutton CinnamonGenericContainer {
   spacing: .2em;
   min-height: 16px;
 }
+
 .radiobutton StLabel {
   padding-top: 1px;
 }
+
 .radiobutton StBin {
   width: 16px;
   height: 16px;
   background-image: url("widget-assets/radiobutton.svg");
 }
+
 .radiobutton:focus StBin {
   background-image: url("widget-assets/radiobutton-focused.svg");
 }
+
 .radiobutton:checked StBin {
   background-image: url("widget-assets/radiobutton-checked.svg");
 }
+
 .radiobutton:focus:checked {
   background-image: url("widget-assets/radiobutton-focused-checked.svg");
 }
@@ -191,31 +211,37 @@ StScrollBar StButton#hhandle:focus {
   font-weight: bold;
   color: white;
 }
+
 .modal-dialog-button:hover,
 .notification-button:hover {
   border-image: url("button-assets/button-hover.svg") 9;
 }
+
 .modal-dialog-button:focus,
 .notification-button:focus {
   border-image: url("button-assets/button-focused.svg") 9;
   color: white;
 }
-.modal-dialog-button:active, .modal-dialog-button:pressed,
-.notification-button:active,
-.notification-button:pressed {
+
+.modal-dialog-button:active,
+.modal-dialog-button:pressed,
+.notification-button:active, .notification-button:pressed {
   border-image: url("button-assets/button-pressed.svg") 9;
 }
+
 .modal-dialog-button:focus:hover,
 .notification-button:focus:hover {
   border-image: url("button-assets/button-focused-hover.svg") 9;
   color: white;
 }
-.modal-dialog-button:focus:active, .modal-dialog-button:focus:pressed,
-.notification-button:focus:active,
-.notification-button:focus:pressed {
+
+.modal-dialog-button:focus:active,
+.modal-dialog-button:focus:pressed,
+.notification-button:focus:active, .notification-button:focus:pressed {
   border-image: url("button-assets/button-focused-pressed.svg") 9;
   color: white;
 }
+
 .modal-dialog-button:disabled,
 .notification-button:disabled {
   border-image: url("button-assets/button-insensitive.svg") 9;
@@ -232,28 +258,37 @@ StScrollBar StButton#hhandle:focus {
   padding: 10px;
   color: #fff;
 }
+
 .notification-icon-button:hover {
   border-image: url("button-assets/button-hover.svg") 10;
 }
+
 .notification-icon-button:focus {
   border-image: url("button-assets/button-focused.svg") 10;
   color: #fff;
 }
-.notification-icon-button:active, .notification-icon-button:pressed {
+
+.notification-icon-button:active,
+.notification-icon-button:pressed {
   border-image: url("button-assets/button-pressed.svg") 10;
 }
+
 .notification-icon-button:focus:hover {
   border-image: url("button-assets/button-focused-hover.svg") 10;
   color: #fff;
 }
-.notification-icon-button:focus:active, .notification-icon-button:focus:pressed {
+
+.notification-icon-button:focus:active,
+.notification-icon-button:focus:pressed {
   border-image: url("button-assets/button-focused-pressed.svg") 10;
   color: #fff;
 }
+
 .notification-icon-button:disabled {
   border-image: url("button-assets/button-insensitive.svg") 10;
   color: #444;
 }
+
 .notification-icon-button > StIcon {
   icon-size: 16px;
 }
@@ -264,6 +299,7 @@ StScrollBar StButton#hhandle:focus {
 .popup-menu {
   min-width: 100px;
 }
+
 .popup-menu-boxpointer {
   -arrow-border-radius: 0;
   -arrow-background-color: transparent;
@@ -273,30 +309,37 @@ StScrollBar StButton#hhandle:focus {
   -arrow-rise: 0px;
   -boxpointer-gap: 0;
 }
+
 .popup-menu-content {
   border-image: url("background-assets/popup.svg") 7;
-  padding: 1em .2em;
+  padding: 1em 0.2em;
   color: white;
 }
+
 .popup-menu-icon, .popup-menu StIcon {
   icon-size: 16px;
   color: #fff;
 }
+
 .popup-menu-item {
-  padding: .4em 1.6em;
+  padding: 0.4em 1.6em;
   spacing: 12px;
 }
+
 .popup-menu-item:active {
   border-image: url("background-assets/hover-2.svg") 8;
   color: white;
 }
+
 .popup-menu-item:active .popup-menu-icon, .popup-menu-item:active StIcon {
   color: #fff;
 }
+
 .popup-menu-item:insensitive {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.15);
 }
+
 .popup-menu-item-dot {
   /*!*/
 }
@@ -308,6 +351,7 @@ StScrollBar StButton#hhandle:focus {
   padding: .5em 0;
   color: white;
 }
+
 .popup-sub-menu .popup-menu-item:active {
   border-image: url("background-assets/hover-2.svg") 8;
   color: white;
@@ -319,7 +363,7 @@ StScrollBar StButton#hhandle:focus {
 
 .popup-combo-menu {
   border-image: url("background-assets/popup.svg") 7;
-  padding: 1em .2em;
+  padding: 1em 0.2em;
   color: white;
 }
 
@@ -342,6 +386,7 @@ StScrollBar StButton#hhandle:focus {
   -slider-border-width: 0;
   -slider-handle-radius: 0.5em;
 }
+
 .popup-menu-item:active .popup-slider-menu-item {
   height: 1em;
   min-width: 15em;
@@ -366,12 +411,15 @@ StScrollBar StButton#hhandle:focus {
   font-size: 9pt;
   height: 25px;
 }
+
 #panel.panel-top {
   box-shadow: 0 1px rgba(255, 255, 255, 0.15);
 }
+
 #panel.panel-bottom {
   box-shadow: 0 -1px rgba(255, 255, 255, 0.15);
 }
+
 #panel:highlight {
   border-image: url("panel-assets/panel-highlight.svg") 4;
 }
@@ -379,6 +427,7 @@ StScrollBar StButton#hhandle:focus {
 .panel-dummy {
   background-color: rgba(129, 152, 175, 0.8);
 }
+
 .panel-dummy:entered {
   background-color: #8198af;
 }
@@ -387,9 +436,11 @@ StScrollBar StButton#hhandle:focus {
 .panel-top #panelLeft:dnd {
   border-image: url("panel-assets/DND-panel-top-left.svg") 4;
 }
+
 .panel-top #panelCenter:dnd {
   border-image: url("panel-assets/DND-panel-top-center.svg") 4;
 }
+
 .panel-top #panelRight:dnd {
   border-image: url("panel-assets/DND-panel-top-right.svg") 4;
 }
@@ -397,9 +448,11 @@ StScrollBar StButton#hhandle:focus {
 .panel-bottom #panelLeft:dnd {
   border-image: url("panel-assets/DND-panel-bottom-left.svg") 4;
 }
+
 .panel-bottom #panelCenter:dnd {
   border-image: url("panel-assets/DND-panel-bottom-center.svg") 4;
 }
+
 .panel-bottom #panelRight:dnd {
   border-image: url("panel-assets/DND-panel-bottom-right.svg") 4;
 }
@@ -449,10 +502,17 @@ StScrollBar StButton#hhandle:focus {
   font-weight: bold;
   color: #fff;
 }
-.panel-button #appMenuIcon, .panel-button:active > #appMenuIcon, .panel-button:checked > #appMenuIcon, .panel-button:focus > #appMenuIcon {
+
+.panel-button #appMenuIcon,
+.panel-button:active > #appMenuIcon,
+.panel-button:checked > #appMenuIcon,
+.panel-button:focus > #appMenuIcon {
   app-icon-bottom-clip: 0;
 }
-.panel-button:active > .system-status-icon, .panel-button:checked > .system-status-icon, .panel-button:focus > .system-status-icon {
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
   icon-shadow: transparent 0;
 }
 
@@ -468,6 +528,7 @@ StScrollBar StButton#hhandle:focus {
   border: 5px transparent;
   border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
 }
+
 .expo-workspace-thumbnail-frame#active {
   border: 5px transparent;
   border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
@@ -492,11 +553,14 @@ StScrollBar StButton#hhandle:focus {
   font-weight: bold;
   color: white;
 }
+
 .expo-workspaces-name-entry#selected {
   border-image: url("expo-scale-assets/workspace-name-focused.svg") 6;
   color: white;
 }
-.expo-workspaces-name-entry:focus, .expo-workspaces-name-entry#selected:focus {
+
+.expo-workspaces-name-entry:focus,
+.expo-workspaces-name-entry#selected:focus {
   border-image: url("expo-scale-assets/workspace-name-pressed.svg") 7;
   color: white;
   selected-color: white;
@@ -511,6 +575,7 @@ StScrollBar StButton#hhandle:focus {
   width: 41px;
   -cinnamon-close-overlap: 28px;
 }
+
 .workspace-close-button:hover {
   background-image: url("widget-assets/close-hover.svg");
 }
@@ -522,6 +587,7 @@ StScrollBar StButton#hhandle:focus {
   height: 200px;
   width: 35px;
 }
+
 .workspace-add-button:hover {
   border-image: url("expo-scale-assets/add-workspace-bg.svg") 3;
   background-image: url("expo-scale-assets/plus-hover.svg");
@@ -559,6 +625,7 @@ StScrollBar StButton#hhandle:focus {
   spacing: 25px;
   -cinnamon-caption-spacing: 10px;
 }
+
 .window-caption#selected {
   border-image: url("expo-scale-assets/window-name-focused.svg") 6;
   color: white;
@@ -570,6 +637,7 @@ StScrollBar StButton#hhandle:focus {
   width: 41px;
   -cinnamon-close-overlap: 22px;
 }
+
 .window-close:hover {
   background-image: url("widget-assets/close-hover.svg");
 }
@@ -580,18 +648,21 @@ StScrollBar StButton#hhandle:focus {
 .desklet {
   color: white;
 }
+
 .desklet-with-borders {
   border-image: url("background-assets/popup.svg") 7;
   color: white;
   font-weight: bold;
   padding: 6px;
 }
+
 .desklet-with-borders-and-header {
   border-image: url("background-assets/desklet-body.svg") 7;
   color: white;
   padding: 6px;
   padding-top: 3px;
 }
+
 .desklet-header {
   border-image: url("background-assets/desklet-header.svg") 7;
   font-size: 10pt;
@@ -602,6 +673,7 @@ StScrollBar StButton#hhandle:focus {
   padding-top: 6px;
   padding-bottom: 0;
 }
+
 .desklet-drag-placeholder {
   border: 0 solid transparent;
   border-radius: 0;
@@ -651,23 +723,29 @@ StScrollBar StButton#hhandle:focus {
   font-size: 10pt;
   color: white;
 }
+
 #notification.multi-line-notification {
   padding: 16px;
   color: white;
 }
+
 #notification-scrollview {
   max-height: 100em;
 }
+
 #notification-scrollview > .top-shadow,
 #notification-scrollview > .bottom-shadow {
   height: 10em;
 }
+
 #notification-scrollview:ltr > StScrollBar {
   padding-left: 6px;
 }
+
 #notification-scrollview:rtl > StScrollBar {
   padding-right: 6px;
 }
+
 #notification-body {
   border-image: url("misc-assets/separator-top.svg") 2 2 2 0;
   font-weight: normal;
@@ -675,6 +753,7 @@ StScrollBar StButton#hhandle:focus {
   spacing: 5px;
   padding: 12px;
 }
+
 #notification-actions {
   spacing: 10px;
 }
@@ -687,11 +766,13 @@ StScrollBar StButton#hhandle:focus {
    ! Notification applet
    ===================================================================*/
 .notification-applet-padding {
-  padding: .6em .4em;
+  padding: 0.6em 0.4em;
 }
+
 .notification-applet-padding:first-child {
   padding-top: 1.3em;
 }
+
 .notification-applet-padding:last-child {
   padding-bottom: .4em;
 }
@@ -717,23 +798,29 @@ StScrollBar StButton#hhandle:focus {
   font-size: 12px;
   font-weight: bold;
 }
+
 .switcher-list StLabel {
   padding-top: .4em;
 }
+
 .switcher-list .item-box {
   border-image: url("background-assets/popup-inside-2.svg") 7;
   padding: 8px;
 }
+
 .switcher-list .item-box:selected {
   border-image: url("background-assets/popup-inside-active.svg") 7;
   color: white;
 }
+
 .switcher-list-item-container {
   spacing: 2px;
 }
+
 .switcher-list .thumbnail {
   width: 256px;
 }
+
 .switcher-list .separator {
   /*!*/
 }
@@ -767,10 +854,12 @@ StScrollBar StButton#hhandle:focus {
   padding: 0;
   color: white;
 }
+
 .modal-dialog > * {
   padding: 24px;
   border-radius: 0;
 }
+
 .modal-dialog > .modal-dialog-button-box {
   border-image: url("background-assets/sub-2.svg") 7;
   padding: 5px 16px 10px 16px;
@@ -782,6 +871,7 @@ StScrollBar StButton#hhandle:focus {
 .run-dialog > * {
   padding: 12px;
 }
+
 .run-dialog > .modal-dialog-button-box {
   background-color: transparent;
   border-image: none;
@@ -789,16 +879,20 @@ StScrollBar StButton#hhandle:focus {
   padding: 0;
   height: 0;
 }
+
 .run-dialog-error-box {
   padding: 10px 2px 2px 2px;
   spacing: 5px;
 }
+
 .run-dialog-completion-box {
   font-size: 10px;
 }
+
 .run-dialog-label {
   font-size: 0;
 }
+
 .run-dialog-entry {
   /*!*/
 }
@@ -845,6 +939,7 @@ StScrollBar StButton#hhandle:focus {
   padding-right: 0;
   border-radius: 0;
 }
+
 .about-scrollBox-innerBox {
   padding: 1.2em;
   spacing: 1.2em;
@@ -882,12 +977,16 @@ StScrollBar StButton#hhandle:focus {
   font-size: 12pt;
   font-weight: bold;
 }
+
 .keyboard-key:hover {
   border-image: url("button-assets/button-hover.svg") 7;
 }
-.keyboard-key:checked, .keyboard-key:active {
+
+.keyboard-key:checked,
+.keyboard-key:active {
   border-image: url("button-assets/button-pressed.svg") 7;
 }
+
 .keyboard-key:grayed {
   border-image: url("button-assets/button-insensitive.svg") 7;
   color: rgba(255, 255, 255, 0.15);
@@ -914,6 +1013,7 @@ StScrollBar StButton#hhandle:focus {
   width: 9px;
   padding: 0;
 }
+
 .applet-separator-line {
   /*!*/
 }
@@ -947,7 +1047,7 @@ StScrollBar StButton#hhandle:focus {
    ! Calendar
    ===================================================================*/
 .calendar {
-  padding: .4em 1.6em;
+  padding: 0.4em 1.6em;
   padding-top: .8em;
   spacing-rows: 5px;
   spacing-columns: 5px;
@@ -955,7 +1055,7 @@ StScrollBar StButton#hhandle:focus {
 
 .datemenu-date-label {
   border-image: url("background-assets/dark-bg-spanned.svg") 6;
-  padding: .6em 0 .5em 0;
+  padding: 0.6em 0 0.5em 0;
   font-size: 10pt;
   font-weight: bold;
   text-align: center;
@@ -969,21 +1069,26 @@ StScrollBar StButton#hhandle:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.calendar-change-month-back, .calendar-change-month-forward:rtl {
+.calendar-change-month-back,
+.calendar-change-month-forward:rtl {
   background-image: url("widget-assets/calendar-arrow-left.svg");
   background-size: 16px;
   height: 16px;
   width: 16px;
 }
-.calendar-change-month-forward, .calendar-change-month-back:rtl {
+
+.calendar-change-month-forward,
+.calendar-change-month-back:rtl {
   background-image: url("widget-assets/calendar-arrow-right.svg");
   background-size: 16px;
   height: 16px;
   width: 16px;
 }
+
 .calendar-change-month-back:hover {
   background-image: url("widget-assets/calendar-arrow-left-hover.svg");
 }
+
 .calendar-change-month-forward:hover {
   background-image: url("widget-assets/calendar-arrow-right-hover.svg");
 }
@@ -1063,21 +1168,25 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-top-item.svg") 4;
   color: white;
 }
+
 .panel-top .window-list-item-box:active,
 .panel-top .window-list-item-box:checked,
 .panel-top .window-list-item-box:focus {
   border-image: url("panel-assets/panel-top-item.svg") 4;
   color: white;
 }
+
 .panel-top .window-list-item-box:checked:hover,
 .panel-top .window-list-item-box:focus:hover,
 .panel-top .window-list-item-box:active:hover {
   border-image: url("panel-assets/panel-top-item-hover.svg") 4;
 }
+
 .panel-top .window-list-item-demands-attention {
   border-image: url("panel-assets/panel-top-item-red.svg") 4;
   color: white;
 }
+
 .panel-top .window-list-item-demands-attention:hover {
   border-image: url("panel-assets/panel-top-item-red-hover.svg") 4;
   color: white;
@@ -1087,21 +1196,25 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-bottom-item.svg") 4;
   color: white;
 }
+
 .panel-bottom .window-list-item-box:active,
 .panel-bottom .window-list-item-box:checked,
 .panel-bottom .window-list-item-box:focus {
   border-image: url("panel-assets/panel-bottom-item.svg") 4;
   color: white;
 }
+
 .panel-bottom .window-list-item-box:checked:hover,
 .panel-bottom .window-list-item-box:focus:hover,
 .panel-bottom .window-list-item-box:active:hover {
   border-image: url("panel-assets/panel-bottom-item-hover.svg") 4;
 }
+
 .panel-bottom .window-list-item-demands-attention {
   border-image: url("panel-assets/panel-bottom-item-red.svg") 4;
   color: white;
 }
+
 .panel-bottom .window-list-item-demands-attention:hover {
   border-image: url("panel-assets/panel-bottom-item-red-hover.svg") 4;
   color: white;
@@ -1116,16 +1229,20 @@ StScrollBar StButton#hhandle:focus {
   height: 24px;
   padding: 6px;
 }
+
 .sound-button:hover {
   border-image: url("button-assets/button-hover.svg") 7;
 }
+
 .sound-button:active {
   border-image: url("button-assets/button-pressed.svg") 7;
 }
+
 .sound-button StIcon {
   icon-size: 16px;
   color: #fff;
 }
+
 .sound-button-container {
   padding-right: 1px;
   padding-left: 1px;
@@ -1140,10 +1257,12 @@ StScrollBar StButton#hhandle:focus {
   padding-top: 2px;
   padding-bottom: 2px;
 }
+
 .sound-track-info StIcon {
   icon-size: 16px;
   color: #fff;
 }
+
 .sound-track-info StLabel {
   padding-left: 5px;
   padding-right: 5px;
@@ -1161,9 +1280,11 @@ StScrollBar StButton#hhandle:focus {
 .sound-seek-box {
   padding-left: 15px;
 }
+
 .sound-seek-box StLabel {
   padding-top: 3px;
 }
+
 .sound-seek-box StIcon {
   icon-size: 16px;
   color: #fff;
@@ -1174,8 +1295,9 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .sound-volume-menu-item {
-  padding: .4em 1.3em;
+  padding: 0.4em 1.3em;
 }
+
 .sound-volume-menu-item StIcon {
   icon-size: 16px;
   padding-left: 8px;
@@ -1208,10 +1330,12 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-top-item.svg") 4;
   color: white;
 }
+
 .panel-top .workspace-button:hover {
   border-image: url("panel-assets/panel-top-item.svg") 4;
   color: white;
 }
+
 .panel-top .workspace-button:outlined:hover {
   border-image: url("panel-assets/panel-top-item-hover.svg") 4;
 }
@@ -1220,10 +1344,12 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-bottom-item.svg") 4;
   color: white;
 }
+
 .panel-bottom .workspace-button:hover {
   border-image: url("panel-assets/panel-bottom-item.svg") 4;
   color: white;
 }
+
 .panel-bottom .workspace-button:outlined:hover {
   border-image: url("panel-assets/panel-bottom-item-hover.svg") 4;
 }
@@ -1257,7 +1383,7 @@ StScrollBar StButton#hhandle:focus {
    ===================================================================*/
 .user-box {
   border-image: url("background-assets/dark-bg-spanned+padding-bottom.svg") 12;
-  padding: .8em 1.6em;
+  padding: 0.8em 1.6em;
   padding-bottom: 1.5em;
   spacing: 10px;
 }
@@ -1289,6 +1415,7 @@ StScrollBar StButton#hhandle:focus {
 .menu-favorites-button {
   padding: 10px 12px;
 }
+
 .menu-favorites-button:hover {
   border-image: url("background-assets/hover.svg") 9;
   color: white;
@@ -1313,19 +1440,23 @@ StScrollBar StButton#hhandle:focus {
 .menu-category-button {
   padding: 7px;
 }
+
 .menu-category-button-greyed {
   padding: 7px;
   color: rgba(255, 255, 255, 0.15);
   font-style: normal;
 }
+
 .menu-category-button-selected {
   padding: 7px;
   border-image: url("background-assets/hover.svg") 7;
   color: white;
 }
+
 .menu-category-button-label:ltr {
   padding-left: 5px;
 }
+
 .menu-category-button-label:rtl {
   padding-right: 5px;
 }
@@ -1341,21 +1472,26 @@ StScrollBar StButton#hhandle:focus {
   padding: 7px;
   max-width: 10px;
 }
+
 .menu-application-button-selected {
   padding: 7px;
   border-image: url("background-assets/hover.svg") 7;
   color: white;
 }
+
 .menu-application-button:highlighted {
   border-image: url("misc-assets/highlighted.svg") 6;
 }
+
 .menu-application-button-selected:highlighted {
   border-image: url("background-assets/hover.svg") 7;
   color: white;
 }
+
 .menu-application-button-label:ltr {
   padding-left: 5px;
 }
+
 .menu-application-button-label:rtl {
   padding-right: 5px;
 }
@@ -1399,6 +1535,7 @@ StEntry:focus .menu-search-entry-icon {
 #overview-corner {
   background-image: url("widget-assets/hotcorner-icon.svg");
 }
+
 #overview-corner:hover {
   background-image: url("widget-assets/hotcorner-icon-hover.svg");
 }
@@ -1430,9 +1567,11 @@ StEntry:focus .menu-search-entry-icon {
   color: white;
   border-image: url("background-assets/popup.svg") 10;
 }
+
 .osd-window StIcon {
   color: #fff;
 }
+
 .osd-window .level {
   height: 2px;
   color: #8198af;
@@ -1455,6 +1594,7 @@ StEntry:focus .menu-search-entry-icon {
 .tile-preview, .tile-hud {
   background-color: rgba(17, 17, 17, 0.6);
 }
+
 .tile-preview.snap, .tile-hud.snap {
   background-color: rgba(129, 152, 175, 0.8);
 }
@@ -1467,6 +1607,7 @@ StEntry:focus .menu-search-entry-icon {
   border-image: url("background-assets/popup-outside.svg") 7;
   padding: 4px 0;
 }
+
 .weather-menu .popup-separator-menu-item {
   background-image: none;
   height: 0;
@@ -1483,7 +1624,9 @@ StEntry:focus .menu-search-entry-icon {
 .weather-current-location-link {
   font-size: 12pt;
 }
-.weather-current-location-link:selected, .weather-current-location-link:hover {
+
+.weather-current-location-link:selected,
+.weather-current-location-link:hover {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 255, 255, 0);
   background-gradient-end: rgba(255, 255, 255, 0);
@@ -1519,6 +1662,7 @@ StEntry:focus .menu-search-entry-icon {
   font-size: 9pt;
   color: white;
 }
+
 .weather-current-databox-captions {
   text-align: right;
   padding: 0;
@@ -1566,6 +1710,7 @@ StEntry:focus .menu-search-entry-icon {
   spacing: 2px;
   padding: 0;
 }
+
 .systray-collapsible-gradient:focus,
 .systray-collapsible-border:focus {
   background-gradient-direction: none;
@@ -1573,6 +1718,7 @@ StEntry:focus .menu-search-entry-icon {
   box-shadow: none;
   padding: 0;
 }
+
 .systray-collapsible-gradient .popup-menu-icon,
 .systray-collapsible-border .popup-menu-icon {
   icon-size: 16px;
@@ -1580,6 +1726,7 @@ StEntry:focus .menu-search-entry-icon {
   padding-left: 2px;
   padding-right: 2px;
 }
+
 .systray-collapsible-gradient:focus .popup-menu-icon,
 .systray-collapsible-border:focus .popup-menu-icon {
   color: #fff;
@@ -1602,14 +1749,17 @@ StEntry:focus .menu-search-entry-icon {
   border-image: url("button-assets//button.svg") 7;
   padding: 10px;
 }
+
 .menu-control-button-selected {
   border-image: url("button-assets//button-hover.svg") 7;
   padding: 10px;
 }
+
 .menu-control-button:open {
   border-image: url("button-assets//button-pressed.svg") 7;
   padding: 10px;
 }
+
 .menu-control-button-selected:open {
   border-image: url("button-assets//button-pressed.svg") 7;
   padding: 10px;
@@ -1659,6 +1809,7 @@ StEntry:focus .menu-search-entry-icon {
   border: 0;
   height: 25px;
 }
+
 .slingshot .entry:focus {
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -1684,25 +1835,30 @@ StEntry:focus .menu-search-entry-icon {
   padding-top: 9px;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .slingshot .button:hover {
   border-image: url("button-assets//button-hover.svg") 7;
   background-gradient-direction: none;
   background-color: transparent;
   color: white;
 }
+
 .slingshot .button:active {
   border-image: url("button-assets//button-pressed.svg") 7;
   background-gradient-direction: none;
   background-color: transparent;
   color: white;
 }
+
 .slingshot .button:checked {
   border-image: url("button-assets//button-focused.svg") 7;
   background-gradient-direction: none;
   background-color: transparent;
   color: white;
 }
-.slingshot .button:hover:checked, .slingshot .button:hover:active {
+
+.slingshot .button:hover:checked,
+.slingshot .button:hover:active {
   background-gradient-direction: none;
   background-color: transparent;
   color: white;
@@ -1715,10 +1871,12 @@ StEntry:focus .menu-search-entry-icon {
   font-size: 9pt;
   padding: 0;
 }
+
 .slingshot .button.app:hover {
   border-image: url("background-assets/hover.svg") 7;
   background-color: transparent;
 }
+
 .slingshot .button.app:focus {
   border-image: url("background-assets/hover.svg") 7;
   background-color: transparent;
@@ -1729,6 +1887,7 @@ StEntry:focus .menu-search-entry-icon {
   padding-left: 8px;
   padding-right: 3px;
 }
+
 .slingshot .sidebar .button {
   border-image: none;
   padding: 5px;
@@ -1741,6 +1900,7 @@ StEntry:focus .menu-search-entry-icon {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
 .slingshot .sidebar .button:hover {
   border-image: url("background-assets/hover.svg") 7;
   border-color: transparent;
@@ -1748,12 +1908,15 @@ StEntry:focus .menu-search-entry-icon {
   box-shadow: none;
   color: white;
 }
-.slingshot .sidebar .button:active, .slingshot .sidebar .button:hover:active {
+
+.slingshot .sidebar .button:active,
+.slingshot .sidebar .button:hover:active {
   background-color: transparent;
   border-color: transparent;
   box-shadow: inset 0 0 0 transparent;
   color: white;
 }
+
 .slingshot .sidebar .button:checked {
   border-image: url("misc-assets/highlighted-mirrored.svg") 7;
   border-color: transparent;
@@ -1761,6 +1924,7 @@ StEntry:focus .menu-search-entry-icon {
   box-shadow: none;
   color: white;
 }
+
 .slingshot .sidebar .button:hover:checked {
   border-image: url("background-assets/hover.svg") 7;
   color: white;
@@ -1777,12 +1941,15 @@ StEntry:focus .menu-search-entry-icon {
   border-radius: 0;
   color: #fff;
 }
+
 .slingshot .linked .button:hover {
   border-image: url("button-assets//linked-button-middle-hover.svg") 9;
 }
+
 .slingshot .linked .button:active {
   border-image: url("button-assets//linked-button-middle-pressed.svg") 9;
 }
+
 .slingshot .linked .button:checked {
   border-image: url("button-assets//linked-button-middle-pressed.svg") 9;
   color: #fff;
@@ -1799,12 +1966,15 @@ StEntry:focus .menu-search-entry-icon {
   padding-right: 5px;
   color: #999;
 }
+
 .slingshot .linked .button:first-child:hover {
   border-image: url("button-assets//linked-button-left-hover.svg") 9;
 }
+
 .slingshot .linked .button:first-child:active {
   border-image: url("button-assets//linked-button-left-pressed.svg") 9;
 }
+
 .slingshot .linked .button:first-child:checked {
   border-image: url("button-assets//linked-button-left-pressed.svg") 9;
   padding-right: 4px;
@@ -1824,13 +1994,17 @@ StEntry:focus .menu-search-entry-icon {
   padding-left: 5px;
   color: #999;
 }
+
 .slingshot .linked .button:last-child:hover {
   border-image: url("button-assets//linked-button-right-hover.svg") 9;
 }
-.slingshot .linked .button:last-child:active, .slingshot .linked .button:last-child:active:hover {
+
+.slingshot .linked .button:last-child:active,
+.slingshot .linked .button:last-child:active:hover {
   border-image: url("button-assets//linked-button-right-pressed.svg") 9;
   border-right-width: 0;
 }
+
 .slingshot .linked .button:last-child:checked {
   border-image: url("button-assets//linked-button-right-pressed.svg") 9;
   padding-left: 4px;
@@ -1847,12 +2021,15 @@ StEntry:focus .menu-search-entry-icon {
   border-radius: 0;
   color: #fff;
 }
+
 .slingshot .linked .button:only-child:hover {
   border-image: url("button-assets//button-hover.svg") 9;
 }
+
 .slingshot .linked .button:only-child:active {
   border-image: url("button-assets//button-pressed.svg") 9;
 }
+
 .slingshot .linked .button:only-child:checked {
   border-image: url("button-assets//button-pressed.svg") 9;
   color: #fff;
@@ -1867,9 +2044,11 @@ StEntry:focus .menu-search-entry-icon {
   padding: 0;
   max-height: 475px;
 }
+
 .xCenter-menu .popup-menu-item {
-  padding: .4em 1.6em;
+  padding: 0.4em 1.6em;
 }
+
 .xCenter-menu .popup-menu-item:active {
   border-image: url("background-assets/hover.svg") 8;
 }
@@ -1893,7 +2072,7 @@ StEntry:focus .menu-search-entry-icon {
 
 .xCenter-pane {
   border-image: url("background-assets/popup-inside-wider.svg") 7;
-  padding: 1em .2em;
+  padding: 1em 0.2em;
 }
 
 .xCenter-menuItemLabel {
@@ -1962,14 +2141,17 @@ StEntry:focus .menu-search-entry-icon {
   height: 24px;
   width: 24px;
 }
+
 .sticky-button-selected {
   border-image: none;
   height: 24px;
   width: 24px;
 }
+
 .sticky-button-selected * {
   color: #8198af;
 }
+
 .sticky-button-box {
   padding: 0;
   padding-top: 4px;
@@ -2034,9 +2216,11 @@ StEntry:focus .menu-search-entry-icon {
   color: rgba(255, 255, 255, 0.5);
   padding: 6px;
 }
+
 .sticky-text-box StIcon {
   color: #999;
 }
+
 .sticky-text-box:active {
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -2054,9 +2238,11 @@ StEntry:focus .menu-search-entry-icon {
   selection-background-color: #8198af;
   padding: 6px;
 }
+
 .sticky-text-box:active StIcon {
   color: #fff;
 }
+
 .sticky-text-box StEntry {
   border-image: none;
 }
@@ -2077,6 +2263,7 @@ StEntry:focus .menu-search-entry-icon {
   padding: 3px;
   color: white;
 }
+
 .reddit-reader StScrollBar {
   padding-left: 1px;
   padding-right: 4px;
@@ -2147,6 +2334,7 @@ StEntry:focus .menu-search-entry-icon {
   padding-top: 4px;
   padding-bottom: 16px;
 }
+
 .calc-displayWindow-rpn {
   border-image: url("background-assets/sub.svg") 7;
   padding: 8px;
@@ -2208,12 +2396,15 @@ StEntry:focus .menu-search-entry-icon {
   margin: 0;
   color: #fff;
 }
+
 .calc-button:hover {
   border-image: url("button-assets/button-hover.svg") 7;
 }
+
 .calc-button:active {
   border-image: url("button-assets/button-pressed.svg") 7;
 }
+
 .calc-button-padding {
   padding: 1px;
 }
@@ -2240,10 +2431,13 @@ StEntry:focus .menu-search-entry-icon {
   padding: 8px;
   padding-top: 6px;
 }
+
 .table-element {
   border-image: url("background-assets/light-bg.svg") 5;
 }
-.table-element:hover, .table-element:activate {
+
+.table-element:hover,
+.table-element:activate {
   border-image: url("background-assets/active-bg.svg") 5;
 }
 
@@ -2256,6 +2450,7 @@ StEntry:focus .menu-search-entry-icon {
 .bottom-box {
   padding: 0 8px;
 }
+
 .bottom-box:last-child {
   padding: 8px;
   padding-top: 2px;
@@ -2269,6 +2464,7 @@ StEntry:focus .menu-search-entry-icon {
   background-color: transparent;
   border-color: transparent;
 }
+
 .grid-preview:activate {
   background-color: rgba(129, 152, 175, 0.5);
   border: 1px solid rgba(1, 50, 99, 0.3);
@@ -2282,14 +2478,17 @@ StEntry:focus .menu-search-entry-icon {
   height: 34px;
   color: white;
 }
+
 .settings-button:activate {
   border-image: url("button-assets//button-focused-pressed.svg") 7;
   color: white;
 }
+
 .settings-button:activate:hover {
   border-image: url("button-assets//button-focused-pressed.svg") 7;
   color: white;
 }
+
 .settings-button:hover {
   border-image: url("button-assets//button-hover.svg") 7;
   color: white;
@@ -2300,6 +2499,7 @@ StEntry:focus .menu-search-entry-icon {
   width: 24px;
   height: 24px;
 }
+
 .close-button:hover {
   background-image: url("misc-assets/auto-close.svg");
 }
