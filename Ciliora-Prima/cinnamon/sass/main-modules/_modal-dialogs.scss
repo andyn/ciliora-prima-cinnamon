@@ -45,8 +45,15 @@
     }
 
     &-error-box {
-        padding: 10px 2px 2px 2px;
-        spacing: 5px;
+        padding: 12px 4px 6px 4px;
+        spacing: 1em;
+        color: $warning;
+        font-weight: bold;
+
+        StIcon {
+            @include size(16px);
+            color: $warning;
+        }
     }
 
     &-completion-box { font-size: 10px; }
@@ -71,7 +78,7 @@
 }
 
 .about-uuid {
-    font-size: 10px;
+    font-size: 9pt;
     color: $text-secondary;
 }
 
@@ -82,8 +89,8 @@
 
 .about-version {
     padding-left: 7px;
-    font-size: 10px;
-    color: $text-secondary;
+    font-size: 9pt;
+    color: $info;
 }
 
 .about-icon {

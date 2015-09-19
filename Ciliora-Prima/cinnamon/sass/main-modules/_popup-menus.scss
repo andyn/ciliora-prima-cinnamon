@@ -19,6 +19,7 @@
         border-image: url("background-assets/popup.svg") 7;
         padding: 1em .2em;
         color: $text-primary;
+        max-height: 70em;
     }
 
     &-icon, StIcon {
@@ -85,20 +86,12 @@
     -slider-height: 0.1em;
     -slider-background-color: #fff;
     -slider-border-color: #fff;
-    -slider-active-background-color: saturate(tint($accent, 70%), 100%);
-    -slider-active-border-color: saturate(tint($accent, 70%), 100%);
+    -slider-active-background-color: saturate(lighten($accent, 20%), 100%);
+    -slider-active-border-color: saturate(lighten($accent, 20%), 100%);
     -slider-border-width: 0;
-    -slider-handle-radius: 0.5em;
+    -slider-handle-radius: 0.4em;
 
     .popup-menu-item:active & {
-        height: 1em;
-        min-width: 15em;
-        -slider-height: 0.1em;
-        -slider-background-color: #fff;
-        -slider-border-color: #fff;
-        -slider-active-background-color: saturate(tint($accent, 70%), 100%);
-        -slider-active-border-color: saturate(tint($accent, 70%), 100%);
-        -slider-border-width: 0;
         -slider-handle-radius: 0.5em;
     }
 }

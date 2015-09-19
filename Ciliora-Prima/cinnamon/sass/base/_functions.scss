@@ -11,14 +11,9 @@
     @return rgba($color, $new-alpha);
 }
 
-// ------------------------------------------------------------
 
-// Tint & shade functions
-
-@function tint($color, $percent){
-  @return mix(white, $color, $percent);
-}
-
-@function shade($color, $percent){
-  @return mix(black, $color, $percent);
+// Shorthand for size properties
+@mixin size($width, $height:$width) {
+    width: $width;
+    height: $height;
 }

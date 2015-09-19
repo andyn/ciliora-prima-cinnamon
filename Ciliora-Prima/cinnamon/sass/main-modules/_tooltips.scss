@@ -3,17 +3,10 @@
    ===================================================================*/
 
 #Tooltip {
-    padding: 2px 6px;
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(30, 30, 30, .8);
-    background-gradient-end: rgba(30, 30, 30, .8);
-    border: 1px solid rgba(255, 255, 255, .15);
-
+    border-image: url("background-assets/popup-osd.svg") 4;
     padding: 6px 8px;
-
     color: $text-primary;
-    font-size: 8pt;
-    font-weight: normal;
+    font-size: 9pt;
     font-weight: bold;
     text-align: center;
 }

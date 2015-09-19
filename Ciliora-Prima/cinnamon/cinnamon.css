@@ -13,7 +13,7 @@ stage {
 }
 
 .cinnamon-link:hover {
-  color: #ef8112;
+  color: #e8a05f;
 }
 
 .label-shadow {
@@ -24,15 +24,10 @@ stage {
    ! Tooltips
    ===================================================================*/
 #Tooltip {
-  padding: 2px 6px;
-  background-gradient-direction: vertical;
-  background-gradient-start: rgba(30, 30, 30, 0.8);
-  background-gradient-end: rgba(30, 30, 30, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-image: url("background-assets/popup-osd.svg") 4;
   padding: 6px 8px;
   color: white;
-  font-size: 8pt;
-  font-weight: normal;
+  font-size: 9pt;
   font-weight: bold;
   text-align: center;
 }
@@ -314,6 +309,7 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("background-assets/popup.svg") 7;
   padding: 1em 0.2em;
   color: white;
+  max-height: 70em;
 }
 
 .popup-menu-icon, .popup-menu StIcon {
@@ -381,21 +377,13 @@ StScrollBar StButton#hhandle:focus {
   -slider-height: 0.1em;
   -slider-background-color: #fff;
   -slider-border-color: #fff;
-  -slider-active-background-color: #c1e0ff;
-  -slider-active-border-color: #c1e0ff;
+  -slider-active-background-color: #97cbff;
+  -slider-active-border-color: #97cbff;
   -slider-border-width: 0;
-  -slider-handle-radius: 0.5em;
+  -slider-handle-radius: 0.4em;
 }
 
 .popup-menu-item:active .popup-slider-menu-item {
-  height: 1em;
-  min-width: 15em;
-  -slider-height: 0.1em;
-  -slider-background-color: #fff;
-  -slider-border-color: #fff;
-  -slider-active-background-color: #c1e0ff;
-  -slider-active-border-color: #c1e0ff;
-  -slider-border-width: 0;
   -slider-handle-radius: 0.5em;
 }
 
@@ -600,14 +588,6 @@ StScrollBar StButton#hhandle:focus {
   width: 350px;
 }
 
-.workspace-osd {
-  border-image: url("background-assets/popup.svg") 7;
-  padding: 12px 17px;
-  color: white;
-  font-weight: bold;
-  font-size: 20pt;
-}
-
 /* ===================================================================
    ! Scale
    ===================================================================*/
@@ -712,21 +692,18 @@ StScrollBar StButton#hhandle:focus {
    ===================================================================*/
 #notification {
   border-image: url("background-assets/popup.svg") 7;
-  padding: 16px;
-  spacing-rows: 10px;
+  padding: 1.3em;
+  spacing-rows: .5em;
   spacing-columns: 10px;
-  margin-from-right-edge-of-screen: 6px;
-  opacity: 255px;
-  mouseover-opacity: 255px;
   width: 34em;
+  margin-from-right-edge-of-screen: 6px;
   font-weight: bold;
   font-size: 10pt;
   color: white;
 }
 
 #notification.multi-line-notification {
-  padding: 16px;
-  color: white;
+  /*!*/
 }
 
 #notification-scrollview {
@@ -746,20 +723,33 @@ StScrollBar StButton#hhandle:focus {
   padding-right: 6px;
 }
 
-#notification-body {
-  border-image: url("misc-assets/separator-top.svg") 2 2 2 0;
+#notification CinnamonGenericContainer * {
   font-weight: normal;
   font-size: 9pt;
-  spacing: 5px;
-  padding: 12px;
+  color: #e8a05f;
+}
+
+#notification CinnamonGenericContainer *:first-child {
+  font-weight: bold;
+  font-size: 10pt;
+  padding: .2em 0;
+  color: white;
+}
+
+#notification CinnamonGenericContainer *:last-child {
+  padding: .3em 0;
+  color: white;
+}
+
+#notification-body {
+  font-weight: normal;
+  font-size: 9pt;
+  padding: 0.8em 0 0.6em 0;
+  border-top: 1px rgba(0, 0, 0, 0.05);
 }
 
 #notification-actions {
   spacing: 10px;
-}
-
-.notification-with-image {
-  min-height: 159px;
 }
 
 /* ===================================================================
@@ -779,8 +769,8 @@ StScrollBar StButton#hhandle:focus {
 
 /* Notifs look inside the notification applet & other popups. */
 .popup-menu-content #notification {
-  border-image: url("background-assets/dark-bg.svg") 7;
-  padding: 12px;
+  border-image: url("background-assets/light-bg.svg") 7;
+  padding: 0.8em 0.8em 0.6em 0.8em;
 }
 
 /* ===================================================================
@@ -881,8 +871,16 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .run-dialog-error-box {
-  padding: 10px 2px 2px 2px;
-  spacing: 5px;
+  padding: 12px 4px 6px 4px;
+  spacing: 1em;
+  color: #e86b6b;
+  font-weight: bold;
+}
+
+.run-dialog-error-box StIcon {
+  width: 16px;
+  height: 16px;
+  color: #e86b6b;
 }
 
 .run-dialog-completion-box {
@@ -912,7 +910,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .about-uuid {
-  font-size: 10px;
+  font-size: 9pt;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -923,8 +921,8 @@ StScrollBar StButton#hhandle:focus {
 
 .about-version {
   padding-left: 7px;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 9pt;
+  color: #e8a05f;
 }
 
 .about-icon {
@@ -1054,7 +1052,6 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .datemenu-date-label {
-  border-image: url("background-assets/dark-bg-spanned.svg") 6;
   padding: 0.6em 0 0.5em 0;
   font-size: 10pt;
   font-weight: bold;
@@ -1112,13 +1109,13 @@ StScrollBar StButton#hhandle:focus {
 .calendar-work-day {
   border-image: url("misc-assets/calendar-work-day.svg") 6;
   border: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
 }
 
 .calendar-nonwork-day {
   border-image: url("misc-assets/calendar-nonwork-day.svg") 6;
   border: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .calendar-today {
@@ -1516,19 +1513,12 @@ StScrollBar StButton#hhandle:focus {
   padding-left: 30px;
 }
 
-.menu-search-entry-icon {
-  icon-size: 16px;
-}
-
-.menu-search-entry-icon {
-  color: #999;
-}
-
-StEntry:focus .menu-search-entry-icon {
-  color: #fff;
-}
-
 /* Right-click menu */
+.menu-applications-inner-box StScrollView {
+  border-image: url("background-assets/light-bg.svg") 7;
+  padding: 0.5em 0.2em;
+}
+
 /* ===================================================================
    ! Hot corners icons
    ===================================================================*/
@@ -1557,15 +1547,17 @@ StEntry:focus .menu-search-entry-icon {
   font-weight: bold;
   spacing: 1em;
   padding: 16px;
+  font-size: 12pt;
   color: white;
-  border-image: url("background-assets/popup.svg") 7;
+  border-image: url("background-assets/popup-osd.svg") 7;
 }
 
 .osd-window {
   spacing: 1em;
   padding: 16px;
   color: white;
-  border-image: url("background-assets/popup.svg") 10;
+  border-image: url("background-assets/popup-osd.svg") 10;
+  font-size: 20pt;
 }
 
 .osd-window StIcon {
@@ -1573,8 +1565,31 @@ StEntry:focus .menu-search-entry-icon {
 }
 
 .osd-window .level {
-  height: 2px;
-  color: #8198af;
+  height: 5px;
+  color: white;
+}
+
+.workspace-osd {
+  border-image: url("background-assets/popup-osd.svg") 7;
+  padding: 12px 17px;
+  color: white;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+/* ===================================================================
+   ! Looking Glass OSD
+   ===================================================================*/
+#LookingGlassDialog {
+  border-image: url("background-assets/popup-osd.svg") 7;
+  padding: 14px;
+  font-size: 12pt;
+  color: white;
+}
+
+#LookingGlassDialog *:last-child {
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: .4em;
 }
 
 /* ===================================================================
@@ -1622,7 +1637,7 @@ StEntry:focus .menu-search-entry-icon {
 }
 
 .weather-current-location-link {
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 .weather-current-location-link:selected,
@@ -1636,6 +1651,7 @@ StEntry:focus .menu-search-entry-icon {
 
 .weather-current-summarybox {
   padding: 0;
+  spacing: .1em;
 }
 
 .weather-current-summary {
@@ -1648,27 +1664,29 @@ StEntry:focus .menu-search-entry-icon {
 }
 
 .weather-current-icon {
-  padding-top: 15px;
-  padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 30px;
-  padding-bottom: 15px;
+  padding: 15px 30px 15px 10px;
   color: #fff;
 }
 
 .weather-current-databox {
   padding-top: 15px;
+  padding-bottom: .4em;
   padding-left: 30px;
   font-size: 9pt;
-  color: white;
+  spacing: .2em;
+}
+
+.weather-current-databox > * {
+  spacing: .2em;
 }
 
 .weather-current-databox-captions {
-  text-align: right;
-  padding: 0;
-  padding-right: 5px;
-  spacing: 0;
   color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+}
+
+.weather-current-databox-values {
+  color: white;
 }
 
 .weather-current-astronomy {
@@ -1683,13 +1701,20 @@ StEntry:focus .menu-search-entry-icon {
   padding-bottom: 18px;
 }
 
-.weather-forecast-databox {
-  padding: 14px 30px 0 0;
-}
-
 .weather-forecast-icon {
   padding: 10px 10px 0 30px;
   color: #fff;
+}
+
+.weather-forecast-databox {
+  padding: 14px 30px 0 0;
+  spacing: .2em;
+}
+
+.weather-forecast-databox > *:last-child {
+  color: white;
+  font-size: 9pt;
+  font-weight: bold;
 }
 
 .weather-forecast-day {
@@ -1785,6 +1810,19 @@ StEntry:focus .menu-search-entry-icon {
 .menu-search-box-classic {
   padding-left: 0;
   padding-top: 0;
+}
+
+/* Favorites box */
+.menu-favorites-box-stylized,
+.menu-favorites-box-classic {
+  padding: .3em;
+}
+
+/* Right-click menu box */
+.menu-main-box-stylized .menu-context-menu,
+.menu-main-box-claassic .menu-context-menu {
+  border-image: url("background-assets/light-bg.svg") 7;
+  padding: 0.5em 0.2em;
 }
 
 /* ===================================================================
@@ -2066,7 +2104,7 @@ StEntry:focus .menu-search-entry-icon {
 .xCenter-title {
   border: 0 transparent;
   border-bottom-width: 4px;
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: bold;
 }
 
