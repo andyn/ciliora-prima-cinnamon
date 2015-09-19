@@ -2520,7 +2520,7 @@ StBoxLayout.applet-box.desktop-capture StBin {
   border-image: url("background-assets/dark-bg-top.svg") 7;
   padding: 10px;
   color: white;
-  font-size: 8pt;
+  font-size: 9pt;
 }
 
 .reddit-info-box {
@@ -2528,7 +2528,7 @@ StBoxLayout.applet-box.desktop-capture StBin {
   padding: 10px;
   padding-top: 0;
   spacing: 10px;
-  font-size: 7pt;
+  font-size: 9pt;
   color: rgba(255, 255, 255, 0.5);
 }
 
