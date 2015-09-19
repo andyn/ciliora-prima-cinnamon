@@ -2168,7 +2168,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 /* ===================================================================
-   ! Desktop Capture desklet
+   ! Desktop Capture applet
    ===================================================================*/
 /* Panel icon */
 StBoxLayout.applet-box.desktop-capture StBin {
@@ -2290,7 +2290,7 @@ StBoxLayout.applet-box.desktop-capture StBin {
 }
 
 /* ===================================================================
-   ! Color Picker desklet
+   ! Color Picker applet
    ===================================================================*/
 .color-inspector {
   padding: 6px 10px 10px 10px;
