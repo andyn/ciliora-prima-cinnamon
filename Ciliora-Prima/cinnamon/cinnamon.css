@@ -1974,6 +1974,7 @@ StScrollBar StButton#hhandle:focus {
   font-size: 9pt;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-weight: bold;
 }
 
 .slingshot .sidebar .button:hover {
