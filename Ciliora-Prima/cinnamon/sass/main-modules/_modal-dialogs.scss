@@ -52,7 +52,7 @@
     &-error-box {
         padding: 12px 4px 6px 4px;
         spacing: 1em;
-        color: $accent-danger;
+        color: $text-danger;
         font-weight: bold;
 
         StIcon {
@@ -95,7 +95,7 @@
 .about-version {
     padding-left: 7px;
     font-size: 9pt;
-    color: $accent-info;
+    color: $text-info;
 }
 
 .about-icon {
