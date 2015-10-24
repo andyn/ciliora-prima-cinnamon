@@ -9,11 +9,11 @@ stage {
 .cinnamon-link {
   color: #8198af;
   font-weight: normal;
-  text-decoration: underline;
 }
 
 .cinnamon-link:hover {
-  color: #e8a05f;
+  color: #a6b7c7;
+  text-decoration: underline;
 }
 
 .label-shadow {

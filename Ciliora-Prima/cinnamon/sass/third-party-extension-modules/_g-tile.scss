@@ -59,8 +59,8 @@
      border-color: rgba(0, 0, 0, 0);
 
     &:activate {
-        background-color: alpha($accent, .5);
-        border: 1px solid saturate(darken(alpha($accent, .3), 40%), 75%);
+        background-color: alpha($accent-primary, .5);
+        border: 1px solid saturate(darken(alpha($accent-primary, .3), 40%), 75%);
     }
 }
 
