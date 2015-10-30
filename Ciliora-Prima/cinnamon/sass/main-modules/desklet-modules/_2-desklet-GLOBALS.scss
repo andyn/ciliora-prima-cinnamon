@@ -16,7 +16,8 @@
         border-image: url("background-assets/desklet-body.svg") 7;
         color: $text-primary;
         padding: 6px;
-        padding-top: 3px;
+        padding-top: 0;
+        font-weight: bold;
     }
 
     &-header {
@@ -25,9 +26,8 @@
         font-weight: bold;
         text-shadow: none;
         color: $text-primary;
-        padding: 8px;
-        padding-top: 6px;
-        padding-bottom: 0;
+        padding: .8em;
+        padding-bottom: .4em;
     }
 
     &-drag-placeholder {

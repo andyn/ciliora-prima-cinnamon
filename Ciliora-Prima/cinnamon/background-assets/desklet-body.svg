@@ -15,7 +15,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r"
    sodipodi:docname="desklet-body.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.06589"
-     inkscape:cx="12"
+     inkscape:cx="3.9300822"
      inkscape:cy="12"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,7 +38,7 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="875"
+     inkscape:window-height="849"
      inkscape:window-x="0"
      inkscape:window-y="25"
      width="400px"
@@ -46,7 +46,7 @@
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
-     inkscape:object-nodes="false"
+     inkscape:object-nodes="true"
      inkscape:snap-grids="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -148,9 +148,9 @@
        d="m 21,276 0,21 -18,0 0,-21 1,0 0,20 16,0 0,-20 z"
        style="opacity:0.2;fill:#ffffff;fill-opacity:1;stroke:none" />
     <rect
-       y="278"
+       y="276"
        x="5"
-       height="17"
+       height="18.999985"
        width="14"
        id="rect3855"
        style="fill:#000000;fill-opacity:1;stroke:none" />
@@ -158,8 +158,8 @@
        style="fill:#12161a;fill-opacity:1;stroke:none"
        id="rect3085"
        width="12"
-       height="15"
+       height="18"
        x="6"
-       y="279" />
+       y="276" />
   </g>
 </svg>

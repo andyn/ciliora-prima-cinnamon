@@ -563,7 +563,8 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("background-assets/desklet-body.svg") 7;
   color: white;
   padding: 6px;
-  padding-top: 3px;
+  padding-top: 0;
+  font-weight: bold;
 }
 
 .desklet-header {
@@ -572,9 +573,8 @@ StScrollBar StButton#hhandle:focus {
   font-weight: bold;
   text-shadow: none;
   color: white;
-  padding: 8px;
-  padding-top: 6px;
-  padding-bottom: 0;
+  padding: .8em;
+  padding-bottom: .4em;
 }
 
 .desklet-drag-placeholder {

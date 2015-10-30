@@ -15,7 +15,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r"
    sodipodi:docname="desklet-header.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="21.06589"
-     inkscape:cx="12"
-     inkscape:cy="12"
+     inkscape:zoom="14.895834"
+     inkscape:cx="4.4040853"
+     inkscape:cy="5.7979223"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="875"
+     inkscape:window-height="849"
      inkscape:window-x="0"
      inkscape:window-y="25"
      width="400px"
@@ -46,7 +46,7 @@
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
-     inkscape:object-nodes="false"
+     inkscape:object-nodes="true"
      inkscape:snap-grids="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -149,5 +149,33 @@
        transform="translate(0,276)"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3855"
+       width="14"
+       height="19"
+       x="5"
+       y="281" />
+    <rect
+       y="282"
+       x="6"
+       height="18"
+       width="12"
+       id="rect3085"
+       style="fill:#12161a;fill-opacity:1;stroke:none" />
+    <rect
+       y="282"
+       x="6"
+       height="18"
+       width="12"
+       id="rect5188"
+       style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:none" />
+    <rect
+       y="299"
+       x="6"
+       height="1"
+       width="12"
+       id="rect3018"
+       style="opacity:0.07;fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
 </svg>
