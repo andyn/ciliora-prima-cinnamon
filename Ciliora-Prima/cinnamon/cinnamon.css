@@ -2826,52 +2826,53 @@ StBoxLayout.applet-box.desktop-capture StBin {
 
 .calc-displayWindow {
   border-image: url("background-assets/sub.svg") 7;
-  padding: 10px;
+  padding: 8px;
   padding-top: 4px;
-  padding-bottom: 16px;
+  padding-bottom: 2.4em;
 }
 
 .calc-displayWindow-rpn {
   border-image: url("background-assets/sub.svg") 7;
   padding: 8px;
   padding-top: 4px;
-  padding-bottom: 16px;
 }
 
 .calc-displayText-primary {
-  font-size: 32px;
+  font-size: 32pt;
   color: white;
   text-align: right;
 }
 
 .calc-displayText-secondary {
-  font-size: 9px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 10pt;
+  color: #e8a05f;
   text-align: right;
   padding-bottom: 8px;
 }
 
 .calc-displayText-operation {
-  font-size: 24px;
+  color: #e8a05f;
 }
 
 .calc-displayText-status {
-  font-size: 8px;
+  font-size: 10pt;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .calc-displayText-rpn {
   color: white;
+  font-size: 10pt;
 }
 
 .calc-stackArea {
   height: 85px;
-  padding-top: 0;
+  padding-top: .8em;
+  padding-bottom: 0;
 }
 
 .calc-navigation-box {
   padding: 0 0 0 8px;
-  width: 22px;
+  width: 16px;
   border: none;
 }
 
@@ -2884,9 +2885,11 @@ StBoxLayout.applet-box.desktop-capture StBin {
   border: none;
 }
 
+.calc-navigation-button:hover .calc-navigation-icon {
+  color: #8198af;
+}
+
 .calc-button {
-  width: 36px;
-  height: 32px;
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -2899,6 +2902,8 @@ StBoxLayout.applet-box.desktop-capture StBin {
   font-size: 9pt;
   border-image: url("button-assets/button-primary.svg") 10;
   color: white;
+  width: 3.8em;
+  height: 3em;
 }
 
 .calc-button:grayed,
@@ -2955,7 +2960,7 @@ StBoxLayout.applet-box.desktop-capture StBin {
 }
 
 .calc-button-padding {
-  padding: 1px;
+  padding: .1em;
 }
 
 /* ===================================================================
