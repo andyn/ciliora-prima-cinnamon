@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r"
-   sodipodi:docname="panel-top-item-red.svg"
+   sodipodi:docname="panel-bottom-item-blue.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -130,13 +130,13 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.75;fill:#ffadad;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.75;fill:#b9dcff;fill-opacity:1;stroke:none;enable-background:new"
        d="m 0,276 0,24 24,0 0,-24 z m 1,1 22,0 0,22 -22,0 z"
        id="rect5190"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
     <path
-       style="display:inline;fill:#ba7676;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;fill:#8198af;fill-opacity:1;stroke:none;enable-background:new"
        d="m 1,276 22,0 0,24 -22,0 z"
        id="path4191"
        inkscape:connector-curvature="0" />
