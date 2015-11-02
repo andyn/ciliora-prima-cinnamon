@@ -261,10 +261,8 @@ StScrollBar StButton#hhandle:focus {
   color: transparent;
 }
 
-.popup-menu-item .popup-menu-item-dot {
+.popup-menu-item:active .popup-menu-item-dot {
   background-image: url("widget-assets/check-dot-hover.svg");
-  background-size: 10px;
-  color: transparent;
 }
 
 .popup-sub-menu {

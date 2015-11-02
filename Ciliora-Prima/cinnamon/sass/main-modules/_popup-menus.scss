@@ -56,11 +56,9 @@
         background-size: 10px;
         color: rgba(0, 0, 0, 0);
 
-        .popup-menu-item & {
-             background-image: url("widget-assets/check-dot-hover.svg");
-             background-size: 10px;
-             color: rgba(0, 0, 0, 0);
-         }
+        .popup-menu-item:active & {
+            background-image: url("widget-assets/check-dot-hover.svg");
+        }
     }
 }
 
