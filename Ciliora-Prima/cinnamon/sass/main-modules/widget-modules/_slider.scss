@@ -1,0 +1,19 @@
+/* ===================================================================
+ * ! Slider
+ * ===================================================================*/
+
+.slider {
+    height: 1em;
+    min-width: 15em;
+    -slider-height: 0.1em;
+    -slider-background-color: #fff;
+    -slider-border-color: #fff;
+    -slider-active-background-color: saturate(lighten($accent-primary, 20%), 100%);
+    -slider-active-border-color: saturate(lighten($accent-primary, 20%), 100%);
+    -slider-border-width: 0;
+    -slider-handle-radius: 0.4em;
+
+    .popup-menu-item:active & {
+        -slider-handle-radius: 0.5em;
+    }
+}
