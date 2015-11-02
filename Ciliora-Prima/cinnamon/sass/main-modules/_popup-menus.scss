@@ -43,12 +43,6 @@
             .popup-menu-icon, StIcon {
                 color: $icon-primary;
             }
-
-            .popup-menu-item-dot {
-                background-image: url("widget-assets/check-dot-hover.svg");
-                background-size: 10px;
-                color: rgba(0, 0, 0, 0);
-            }
         }
 
         &:insensitive {
@@ -61,6 +55,12 @@
         background-image: url("widget-assets/check-dot.svg");
         background-size: 10px;
         color: rgba(0, 0, 0, 0);
+
+        .popup-menu-item & {
+             background-image: url("widget-assets/check-dot-hover.svg");
+             background-size: 10px;
+             color: rgba(0, 0, 0, 0);
+         }
     }
 }
 
@@ -111,6 +111,10 @@
     }
 }
 
-.popup-subtitle-menu-item {}
+.popup-inactive-menu-item {
+    color: $text-secondary;
+}
 
-.popup-inactive-menu-item { color: $text-secondary; }
+.popup-menu-item .popup-subtitle-menu-item {
+    font-weight: bold;
+}

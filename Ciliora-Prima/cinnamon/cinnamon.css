@@ -250,12 +250,6 @@ StScrollBar StButton#hhandle:focus {
   color: #fff;
 }
 
-.popup-menu-item:active .popup-menu-item-dot {
-  background-image: url("widget-assets/check-dot-hover.svg");
-  background-size: 10px;
-  color: transparent;
-}
-
 .popup-menu-item:insensitive {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.15);
@@ -263,6 +257,12 @@ StScrollBar StButton#hhandle:focus {
 
 .popup-menu-item-dot {
   background-image: url("widget-assets/check-dot.svg");
+  background-size: 10px;
+  color: transparent;
+}
+
+.popup-menu-item .popup-menu-item-dot {
+  background-image: url("widget-assets/check-dot-hover.svg");
   background-size: 10px;
   color: transparent;
 }
@@ -316,6 +316,10 @@ StScrollBar StButton#hhandle:focus {
 
 .popup-inactive-menu-item {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.popup-menu-item .popup-subtitle-menu-item {
+  font-weight: bold;
 }
 
 /* ===================================================================
