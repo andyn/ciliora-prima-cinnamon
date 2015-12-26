@@ -48,8 +48,7 @@
     padding: 0 2px;
     font-weight: bold;
     color: $icon-primary;
-    color: $icon-primary;
-    height: 25px;
+    height: inherit;
 }
 
 .panel-top .panel-status-button:hover {

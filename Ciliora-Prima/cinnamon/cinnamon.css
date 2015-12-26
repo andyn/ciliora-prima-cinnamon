@@ -421,8 +421,7 @@ StScrollBar StButton#hhandle:focus {
   padding: 0 2px;
   font-weight: bold;
   color: #fff;
-  color: #fff;
-  height: 25px;
+  height: inherit;
 }
 
 .panel-top .panel-status-button:hover {
