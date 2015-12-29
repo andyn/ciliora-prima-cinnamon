@@ -15,6 +15,10 @@
         StButton:small {
             @include size(16px);
             padding: 1px;
+
+            &:hover * {
+                color: $accent-primary;
+            }
         }
     }
 
